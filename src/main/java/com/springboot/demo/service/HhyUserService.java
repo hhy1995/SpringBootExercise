@@ -23,4 +23,6 @@ public interface HhyUserService {
     List<HhyUser> findByNameLike(String name);
     List<HhyUser> findByIdIn(Collection<String> ids);
 
+    HhyUser findUserByNameAndPassword(String name,String password);
+
 }

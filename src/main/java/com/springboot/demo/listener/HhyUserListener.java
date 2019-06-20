@@ -9,6 +9,8 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 import java.util.List;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * 监听器
@@ -23,6 +25,8 @@ public class HhyUserListener implements ServletContextListener {
     private HhyUserService hhyUserService;
     private static final String ALL_USER = "ALL_USER_LIST";
 
+    Logger logger = LogManager.getLogger(this.getClass());
+
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         //查询数据库的所有的用户
@@ -33,12 +37,15 @@ public class HhyUserListener implements ServletContextListener {
         redisTemplate.opsForList().leftPushAll(ALL_USER,hhyUserList);
         //查询所有的用户数据
         List<HhyUser> queryUserList = redisTemplate.opsForList().range(ALL_USER, 0, -1);
-        System.out.println("缓存当中目前存在的用户数有： " + queryUserList.size());
-        System.out.println("ServletContext 上下文初始化");
+//        System.out.println("缓存当中目前存在的用户数有： " + queryUserList.size());
+//        System.out.println("ServletContext 上下文初始化");
+        logger.info("ServletContext上下文初始化");
+        logger.info("缓存中目前的用户数有：" + queryUserList.size() + " 人");
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
-        System.out.println("ServletContext 上下文销毁");
+        //System.out.println("ServletContext 上下文销毁");
+        logger.info("ServletContext上下文销毁");
     }
 }

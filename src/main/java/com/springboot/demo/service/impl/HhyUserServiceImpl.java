@@ -1,18 +1,20 @@
 package com.springboot.demo.service.impl;
 
+import com.springboot.demo.dao.HhyUserDao;
 import com.springboot.demo.model.HhyUser;
 import com.springboot.demo.repository.HhyUserRepository;
 import com.springboot.demo.service.HhyUserService;
+import org.apache.logging.log4j.LogManager;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.annotation.Resource;
-import javax.transaction.Transactional;
 import java.util.Collection;
 import java.util.List;
-import java.util.Optional;
 
 /**
  * 用户服务层的实现类
@@ -23,6 +25,7 @@ import java.util.Optional;
 @Service
 //也可以用@Component进行注解
 public class HhyUserServiceImpl implements HhyUserService {
+
 
     @Resource(name = "hhyUserRepository")   //默认按照名称进行装配
     private HhyUserRepository hhyUserRepository;
@@ -66,9 +69,12 @@ public class HhyUserServiceImpl implements HhyUserService {
 //        return saveUser;
     }
 
+    Logger logger = LogManager.getLogger(this.getClass());
+
     @Override
     public void delete(String id) {
         hhyUserRepository.deleteById(id);
+        logger.info("将userId为: " + id + "的用户删除");
     }
 
     @Override
@@ -90,4 +96,13 @@ public class HhyUserServiceImpl implements HhyUserService {
     public List<HhyUser> findByIdIn(Collection<String> ids) {
         return hhyUserRepository.findByIdIn(ids);
     }
+
+    @Resource
+    private HhyUserDao hhyUserDao;
+
+    @Override
+    public HhyUser findUserByNameAndPassword(String name, String password) {
+        return hhyUserDao.findByNameAndPassword(name,password);
+    }
+
 }
