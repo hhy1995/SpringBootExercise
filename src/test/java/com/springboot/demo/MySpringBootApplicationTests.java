@@ -4,8 +4,10 @@ import com.springboot.demo.dao.HhyUserDao;
 import com.springboot.demo.mail.SendJunkMailService;
 import com.springboot.demo.model.HhyMood;
 import com.springboot.demo.model.HhyUser;
+import com.springboot.demo.mq.HhyMoodProducer;
 import com.springboot.demo.service.HhyMoodService;
 import com.springboot.demo.service.HhyUserService;
+import org.apache.activemq.command.ActiveMQQueue;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Test;
@@ -21,11 +23,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.Assert;
 
 import javax.annotation.Resource;
+import javax.jms.Destination;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.Future;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -179,14 +183,14 @@ public class MySpringBootApplicationTests {
         List<HhyUser> hhyUserList = hhyUserService.findAll();
         sendJunkMailService.sendJunkMail(hhyUserList);
     }
-    
+
     @Resource
     private HhyUserDao hhyUserDao;
 
     @Test
     public void testMybatis() {
         HhyUser hhyUser = hhyUserDao.findByNameAndPassword("hhy", "hhy");
-       // HhyUser hhyUser = hhyUserDao.findUserByName("hhy");
+        // HhyUser hhyUser = hhyUserDao.findUserByName("hhy");
         logger.info("查找到用户：id为" + hhyUser.getId() + ",姓名为：" + hhyUser.getName());
     }
 
@@ -194,7 +198,7 @@ public class MySpringBootApplicationTests {
     private HhyMoodService hhyMoodService;
 
     @Test
-    public void testHhyMood(){
+    public void testHhyMood() {
         HhyMood hhyMood = new HhyMood();
         hhyMood.setId("1");
         hhyMood.setUserId("1");
@@ -202,5 +206,69 @@ public class MySpringBootApplicationTests {
         hhyMood.setContent("一条测试说说");
         hhyMood.setPublishTime(new Date());
         HhyMood mood = hhyMoodService.save(hhyMood);
+    }
+
+    @Resource
+    private HhyMoodProducer hhyMoodProducer;
+
+    @Test
+    public void testActiveMQ() {
+        Destination destination = new ActiveMQQueue("hhy.queue");
+        hhyMoodProducer.sendMessage(destination, "hello,activemq!");
+    }
+
+    @Test
+    public void testActiveMQAsynSave() {
+        HhyMood hhyMood = new HhyMood();
+        hhyMood.setId("2");
+        hhyMood.setUserId("2");
+        hhyMood.setPraiseNum(2);
+        hhyMood.setContent("第二条一条测试说说");
+        hhyMood.setPublishTime(new Date());
+        String msg = hhyMoodService.asynSave(hhyMood);
+        System.out.println("异步发布说说：" + msg);
+
+    }
+
+    @Test
+    public void testAsync() {
+        long start = System.currentTimeMillis();
+//        System.out.println("第一次查询所有的用户！");
+//        List<HhyUser> userList1 = hhyUserService.findAll();
+//        System.out.println("第二次查询所有的用户！");
+//        List<HhyUser> userList2 = hhyUserService.findAll();
+//        System.out.println("第三次查询所有的用户！");
+//        List<HhyUser> userList3 = hhyUserService.findAll();
+        for (int i = 0; i <= 100; i++) {
+            System.out.println("第" + i + "次查询所有的用户！");
+            List<HhyUser> userList = hhyUserService.findAll();
+        }
+        long end = System.currentTimeMillis();
+        System.out.println("总耗时：" + (end - start) + "毫秒");
+    }
+
+    @Test
+    public void testAsync2() throws Exception {
+        long start = System.currentTimeMillis();
+//        System.out.println("第一次查询所有的用户！");
+//        Future<List<HhyUser>> asynAll = hhyUserService.findAsynAll();
+//        System.out.println("第二次查询所有的用户！");
+//        Future<List<HhyUser>> asynAll2 = hhyUserService.findAsynAll();
+//        System.out.println("第三次查询所有的用户！");
+//        Future<List<HhyUser>> asynAll3 = hhyUserService.findAsynAll();
+//        while (true) {
+//            if (asynAll.isDone() && asynAll2.isDone() && asynAll3.isDone()) {
+//                break;
+//            } else {
+//                Thread.sleep(10);
+//            }
+//        }
+        for (int i = 0; i <= 100; i++) {
+            System.out.println("第" + i + "次查询所有的用户！");
+            Future<List<HhyUser>> asynAll = hhyUserService.findAsynAll();
+        }
+
+        long end = System.currentTimeMillis();
+        System.out.println("总耗时：" + (end - start) + "毫秒");
     }
 }

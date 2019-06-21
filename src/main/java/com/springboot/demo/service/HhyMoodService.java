@@ -8,4 +8,5 @@ import com.springboot.demo.model.HhyMood;
  */
 public interface HhyMoodService {
     HhyMood save(HhyMood hhyMood);
+    String asynSave(HhyMood hhyMood);
 }

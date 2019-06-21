@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "endpoints.bean.sensitive",
+      "type": "java.lang.String",
+      "description": "Description for endpoints.bean.sensitive."
+  }
+] }

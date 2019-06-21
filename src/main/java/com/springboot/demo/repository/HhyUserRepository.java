@@ -30,4 +30,5 @@ public interface HhyUserRepository extends JpaRepository<HhyUser,String> {
      * @return
      */
     List<HhyUser> findByIdIn(Collection<String> ids);
+
 }

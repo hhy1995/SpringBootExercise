@@ -1,6 +1,7 @@
 package com.springboot.demo.service.impl;
 
 import com.springboot.demo.dao.HhyUserDao;
+import com.springboot.demo.error.BusinessException;
 import com.springboot.demo.model.HhyUser;
 import com.springboot.demo.repository.HhyUserRepository;
 import com.springboot.demo.service.HhyUserService;
@@ -8,13 +9,18 @@ import org.apache.logging.log4j.LogManager;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.retry.annotation.Backoff;
+import org.springframework.retry.annotation.Retryable;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.stereotype.Service;
-import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.annotation.Resource;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.Future;
 
 /**
  * 用户服务层的实现类
@@ -54,7 +60,17 @@ public class HhyUserServiceImpl implements HhyUserService {
 
     @Override
     public List<HhyUser> findAll() {
-        return hhyUserRepository.findAll();
+        try{
+            System.out.println("开始执行任务！");
+            long start = System.currentTimeMillis();
+            List<HhyUser> hhyUserList = hhyUserRepository.findAll();
+            long end = System.currentTimeMillis();
+            System.out.println("执行任务所花费的时间：" +(end - start) +"毫秒");
+            return hhyUserList;
+        }catch (Exception e){
+            logger.error("method [findAll] error" + e);
+            return Collections.EMPTY_LIST;
+        }
     }
 
     //将Transactional注解在方法上
@@ -88,6 +104,12 @@ public class HhyUserServiceImpl implements HhyUserService {
     }
 
     @Override
+    public HhyUser findByUserName(String name) {
+        return hhyUserDao.findByUserName(name);
+    }
+
+
+    @Override
     public List<HhyUser> findByNameLike(String name) {
         return hhyUserRepository.findByNameLike(name);
     }
@@ -105,4 +127,26 @@ public class HhyUserServiceImpl implements HhyUserService {
         return hhyUserDao.findByNameAndPassword(name,password);
     }
 
+    @Override
+    @Async
+    public Future<List<HhyUser>> findAsynAll() {
+        try{
+            System.out.println("开始执行findAsynAll任务！");
+            long start = System.currentTimeMillis();
+            List<HhyUser> hhyUserList = hhyUserRepository.findAll();;
+            long end = System.currentTimeMillis();
+            System.out.println("执行findAsynAll任务所花费的时间：" +(end - start) +"毫秒");
+            return new AsyncResult<List<HhyUser>>(hhyUserList);
+        }catch (Exception e){
+            logger.error("method [findAsynAll] error" + e);
+            return new AsyncResult<List<HhyUser>>(null);
+        }
+    }
+    @Override
+    @Retryable(value = {BusinessException.class},maxAttempts = 5,backoff = @Backoff(delay = 5000,multiplier = 2))
+    public HhyUser findByNameAndPasswordRetry(String name, String password) {
+        //故意抛出业务异常进行测试
+        System.out.println("[findByNameAndPasswordRetry] 方法失败重试！");
+        throw new BusinessException();
+    }
 }

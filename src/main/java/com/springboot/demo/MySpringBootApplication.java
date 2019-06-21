@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.retry.annotation.EnableRetry;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 
 //@EnableAutoConfiguration
@@ -17,6 +19,8 @@ import org.springframework.context.annotation.ImportResource;
 @SpringBootApplication  //是一个组合注解,效果和下面三个注解结合起来一致
 @ServletComponentScan
 @ImportResource(locations = {"classpath:spring-mvc.xml"})    //导入资源配置文件，可以让Spring Boot读取到
+@EnableAsync  //开启异步调用
+@EnableRetry  //开启retry重试
 public class MySpringBootApplication{
 
     public static void main(String[] args) {

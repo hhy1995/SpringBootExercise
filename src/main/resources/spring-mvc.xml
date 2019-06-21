@@ -20,4 +20,5 @@
     <!-- 利用import引入定时器的配置文件 -->
     <import resource="spring-quartz.xml"/>
 
+
 </beans>

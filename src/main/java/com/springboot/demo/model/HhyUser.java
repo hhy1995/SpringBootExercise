@@ -44,12 +44,4 @@ public class HhyUser implements Serializable {
         return password;
     }
 
-    @Override
-    public String toString() {
-        return "hhy_User{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", password='" + password + '\'' +
-                '}';
-    }
 }

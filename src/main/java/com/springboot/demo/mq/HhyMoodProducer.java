@@ -1,5 +1,6 @@
 package com.springboot.demo.mq;
 
+import com.springboot.demo.model.HhyMood;
 import org.springframework.jms.core.JmsMessagingTemplate;
 import org.springframework.stereotype.Service;
 
@@ -17,5 +18,9 @@ public class HhyMoodProducer {
 
     public void sendMessage(Destination destination, final String message){
         jmsMessagingTemplate.convertAndSend(destination,message);
+    }
+
+    public void sendMessage(Destination destination, final HhyMood hhyMood){
+        jmsMessagingTemplate.convertAndSend(destination,hhyMood);
     }
 }

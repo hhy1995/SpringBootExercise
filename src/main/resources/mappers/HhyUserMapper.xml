@@ -16,7 +16,7 @@
     <select id="findByNameAndPassword" resultMap="UserResultMap" parameterType="String">
         select * from hhy_user u
         <where>
-            u.name = #{name} and u.password = #{password}
+        u.name = #{name} and u.password = #{password}
         </where>
     </select>
 

@@ -21,6 +21,6 @@ public interface HhyUserDao {
      * 通过用户名查询用户
      * @param name
      */
-    HhyUser findUserByName(@Param("name") String name);
+    HhyUser findByUserName(@Param("name") String name);
 
 }
