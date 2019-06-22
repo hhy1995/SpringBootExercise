@@ -149,4 +149,9 @@ public class HhyUserServiceImpl implements HhyUserService {
         System.out.println("[findByNameAndPasswordRetry] 方法失败重试！");
         throw new BusinessException();
     }
+
+    @Override
+    public Long findUserTotalNum() {
+        return hhyUserRepository.count();
+    }
 }

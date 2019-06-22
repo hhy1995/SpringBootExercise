@@ -1,43 +1,36 @@
-[20:24:04:122] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50) - Starting MySpringBootApplication on DESKTOP-B8Q7E9D with PID 20368 (E:\Code\Exerices\SpringBoot\target\classes started by hehaiyang in E:\Code\Exerices\SpringBoot)
-[20:24:04:134] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:675) - No active profile set, falling back to default profiles: default
-[20:24:05:081] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:244) - Multiple Spring Data modules found, entering strict repository configuration mode!
-[20:24:05:082] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
-[20:24:05:138] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:182) - Finished Spring Data repository scanning in 50ms. Found 4 repository interfaces.
-[20:24:05:147] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:244) - Multiple Spring Data modules found, entering strict repository configuration mode!
-[20:24:05:147] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
-[20:24:05:162] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate(RepositoryConfigurationExtensionSupport.java:363) - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.demo.repository.HhyMoodRepository.
-[20:24:05:163] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate(RepositoryConfigurationExtensionSupport.java:363) - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.demo.repository.HhyRoleRepository.
-[20:24:05:163] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate(RepositoryConfigurationExtensionSupport.java:363) - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.demo.repository.HhyUserRepository.
-[20:24:05:163] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate(RepositoryConfigurationExtensionSupport.java:363) - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.demo.repository.HhyUserRoleRelRepository.
-[20:24:05:163] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:182) - Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
-[20:24:05:556] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$64db13c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[20:24:05:585] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6f177ba3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[20:24:05:796] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90) - Tomcat initialized with port(s): 8080 (http)
-[20:24:05:804] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
-[20:24:05:809] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
-[20:24:05:810] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.19]
-[20:24:05:879] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-[20:24:05:879] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1680 ms
-[20:24:06:499] [INFO] - com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56) - Init DruidDataSource
-[20:24:06:729] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:991) - {dataSource-1} inited
-[20:24:06:911] [INFO] - org.hibernate.Version.logVersion(Version.java:46) - HHH000412: Hibernate Core {5.3.10.Final}
-[20:24:06:913] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
-[20:24:06:990] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-[20:24:07:097] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-[20:24:07:540] [INFO] - org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:415) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[20:24:08:038] [INFO] - org.springframework.boot.web.servlet.DynamicRegistrationBean.register(DynamicRegistrationBean.java:111) - Filter webStatFilter was not registered (possibly already registered?)
-[20:24:08:039] [INFO] - org.springframework.boot.web.servlet.DynamicRegistrationBean.register(DynamicRegistrationBean.java:111) - Servlet statViewServlet was not registered (possibly already registered?)
-[20:24:08:079] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
-[20:24:08:227] [INFO] - io.lettuce.core.EpollProvider.<clinit>(EpollProvider.java:68) - Starting without optional epoll library
-[20:24:08:228] [INFO] - io.lettuce.core.KqueueProvider.<clinit>(KqueueProvider.java:70) - Starting without optional kqueue library
-[20:24:08:574] [INFO] - com.springboot.demo.listener.HhyUserListener.contextInitialized(HhyUserListener.java:42) - ServletContext‰∏ä‰∏ãÊñáÂàùÂßãÂåñ
-[20:24:08:574] [INFO] - com.springboot.demo.listener.HhyUserListener.contextInitialized(HhyUserListener.java:43) - ÁºìÂ≠ò‰∏≠ÁõÆÂâçÁöÑÁî®Êà∑Êï∞ÊúâÔºö4 ‰∫∫
-[20:24:08:993] [INFO] - org.springframework.security.web.DefaultSecurityFilterChain.<init>(DefaultSecurityFilterChain.java:43) - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@602aeb87, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e9dcdd3, org.springframework.security.web.header.HeaderWriterFilter@4e26040f, org.springframework.security.web.csrf.CsrfFilter@6f4f2cc0, org.springframework.security.web.authentication.logout.LogoutFilter@1eb52131, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@36fe83d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@35f22eef, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@423762ae, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@247dcbba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9a07409, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6493f780, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b58d678, org.springframework.security.web.session.SessionManagementFilter@8bde368, org.springframework.security.web.access.ExceptionTranslationFilter@38f63756, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6de9bba2]
-[20:24:09:057] [INFO] - org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1172) - Using default implementation for ThreadExecutor
-[20:24:09:065] [INFO] - org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-[20:24:09:065] [INFO] - org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:240) - Quartz Scheduler v.2.2.3 created.
-[20:24:09:065] [INFO] - org.quartz.simpl.RAMJobStore.initialize(RAMJobStore.java:155) - RAMJobStore initialized.
-[20:24:09:066] [INFO] - org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:305) - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'scheduler' with instanceId 'NON_CLUSTERED'
+[21:26:04:673] [INFO] - org.springframework.test.context.support.AbstractTestContextBootstrapper.buildDefaultMergedContextConfiguration(AbstractTestContextBootstrapper.java:308) - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.springboot.demo.MySpringBootApplicationTests], using SpringBootContextLoader
+[21:26:04:682] [INFO] - org.springframework.test.context.support.AbstractContextLoader.generateDefaultLocations(AbstractContextLoader.java:264) - Could not detect default resource locations for test class [com.springboot.demo.MySpringBootApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[21:26:04:683] [INFO] - org.springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses(AnnotationConfigContextLoaderUtils.java:83) - Could not detect default configuration classes for test class [com.springboot.demo.MySpringBootApplicationTests]: MySpringBootApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[21:26:04:756] [INFO] - org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(SpringBootTestContextBootstrapper.java:247) - Found @SpringBootConfiguration com.springboot.demo.MySpringBootApplication for test class com.springboot.demo.MySpringBootApplicationTests
+[21:26:04:814] [INFO] - org.springframework.test.context.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:248) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[21:26:04:826] [INFO] - org.springframework.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:177) - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4dd6fd0a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@bb9e6dc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5456afaa, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6692b6c6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1cd629b3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@589da3f3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@39d76cb5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4a00d9cf, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6736fa8d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@52815fa3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@50313382, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1cb346ea]
+[21:26:05:048] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50) - Starting MySpringBootApplicationTests on DESKTOP-B8Q7E9D with PID 20428 (started by hehaiyang in E:\Code\Exerices\SpringBoot)
+[21:26:05:049] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:679) - The following profiles are active: dev
+[21:26:06:317] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:244) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[21:26:06:318] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[21:26:06:449] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:182) - Finished Spring Data repository scanning in 122ms. Found 4 repository interfaces.
+[21:26:06:458] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:244) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[21:26:06:459] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[21:26:06:480] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate(RepositoryConfigurationExtensionSupport.java:363) - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.demo.repository.HhyMoodRepository.
+[21:26:06:481] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate(RepositoryConfigurationExtensionSupport.java:363) - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.demo.repository.HhyRoleRepository.
+[21:26:06:481] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate(RepositoryConfigurationExtensionSupport.java:363) - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.demo.repository.HhyUserRepository.
+[21:26:06:482] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate(RepositoryConfigurationExtensionSupport.java:363) - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.demo.repository.HhyUserRoleRelRepository.
+[21:26:06:482] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:182) - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+[21:26:07:097] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$38f02a0f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[21:26:07:127] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$432c91ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[21:26:07:185] [INFO] - com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56) - Init DruidDataSource
+[21:26:07:513] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:991) - {dataSource-1} inited
+[21:26:07:796] [INFO] - org.hibernate.Version.logVersion(Version.java:46) - HHH000412: Hibernate Core {5.3.10.Final}
+[21:26:07:797] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[21:26:07:913] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[21:26:08:175] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[21:26:08:831] [INFO] - org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:415) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[21:26:10:733] [INFO] - org.springframework.security.web.DefaultSecurityFilterChain.<init>(DefaultSecurityFilterChain.java:43) - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ffcdc9b, org.springframework.security.web.context.SecurityContextPersistenceFilter@4ac0d49, org.springframework.security.web.header.HeaderWriterFilter@363ba634, org.springframework.security.web.csrf.CsrfFilter@2e40ea48, org.springframework.security.web.authentication.logout.LogoutFilter@11d422fd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6b6c0b7c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@318511f0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@47994b51, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4136b193, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ce4498f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51566ce0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19f99aaf, org.springframework.security.web.session.SessionManagementFilter@4e26c308, org.springframework.security.web.access.ExceptionTranslationFilter@5c215642, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f498f21]
+[21:26:10:821] [INFO] - org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1172) - Using default implementation for ThreadExecutor
+[21:26:10:833] [INFO] - org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[21:26:10:833] [INFO] - org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:240) - Quartz Scheduler v.2.2.3 created.
+[21:26:10:834] [INFO] - org.quartz.simpl.RAMJobStore.initialize(RAMJobStore.java:155) - RAMJobStore initialized.
+[21:26:10:835] [INFO] - org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:305) - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'scheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -45,20 +38,558 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-[20:24:09:066] [INFO] - org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1327) - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
-[20:24:09:066] [INFO] - org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1331) - Quartz scheduler version: 2.2.3
-[20:24:09:067] [INFO] - org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311) - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@4ca907af
-[20:24:09:255] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
-[20:24:09:285] [WARN] - org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:237) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[20:24:09:385] [WARN] - org.thymeleaf.templatemode.TemplateMode.parse(TemplateMode.java:150) - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-[20:24:09:806] [INFO] - org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:59) - Exposing 14 endpoint(s) beneath base path '/actuator'
-[20:24:09:840] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskScheduler'
-[20:24:09:912] [INFO] - org.springframework.scheduling.quartz.SchedulerFactoryBean.startScheduler(SchedulerFactoryBean.java:726) - Starting Quartz Scheduler now
-[20:24:09:912] [INFO] - org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:575) - Scheduler scheduler_$_NON_CLUSTERED started.
-[20:24:10:006] [INFO] - com.springboot.demo.quartz.TestTask.run(TestTask.java:15) - ---ÂÆöÊó∂Âô®(TestTask)ÂºÄÂßãËøêË°å---
-[20:24:10:086] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
-[20:24:10:094] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
-[20:24:10:096] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59) - Started MySpringBootApplication in 6.183 seconds (JVM running for 6.941)
-[20:24:10:405] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[20:24:10:405] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'dispatcherServlet'
-[20:24:10:419] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 14 ms
+[21:26:10:835] [INFO] - org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1327) - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+[21:26:10:835] [INFO] - org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1331) - Quartz scheduler version: 2.2.3
+[21:26:10:836] [INFO] - org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311) - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@3e8fe7db
+[21:26:11:489] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[21:26:11:543] [WARN] - org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:237) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[21:26:11:739] [WARN] - org.thymeleaf.templatemode.TemplateMode.parse(TemplateMode.java:150) - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[21:26:13:004] [INFO] - org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:59) - Exposing 2 endpoint(s) beneath base path '/actuator'
+[21:26:13:070] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskScheduler'
+[21:26:13:214] [INFO] - org.springframework.scheduling.quartz.SchedulerFactoryBean.startScheduler(SchedulerFactoryBean.java:726) - Starting Quartz Scheduler now
+[21:26:13:214] [INFO] - org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:575) - Scheduler scheduler_$_NON_CLUSTERED started.
+[21:26:13:221] [INFO] - com.springboot.demo.quartz.TestTask.run(TestTask.java:15) - ---∂® ±∆˜(TestTask)ø™ º‘À––---
+[21:26:13:406] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59) - Started MySpringBootApplicationTests in 8.551 seconds (JVM running for 9.335)
+[21:26:13:462] [WARN] - org.springframework.jms.listener.AbstractMessageListenerContainer.invokeErrorHandler(AbstractMessageListenerContainer.java:929) - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void com.springboot.demo.mq.HhyNoodConsumer.receiveQueue(com.springboot.demo.model.HhyMood)' threw exception; nested exception is org.springframework.jms.support.converter.MessageConversionException: Could not convert JMS message; nested exception is javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:122) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:77) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:736) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:696) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
+Caused by: org.springframework.jms.support.converter.MessageConversionException: Could not convert JMS message; nested exception is javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:256) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+Caused by: javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:213) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.extractSerializableFromMessage(SimpleMessageConverter.java:219) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:105) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:251) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+Caused by: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.apache.activemq.util.ClassLoadingAwareObjectInputStream.checkSecurity(ClassLoadingAwareObjectInputStream.java:112) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.apache.activemq.util.ClassLoadingAwareObjectInputStream.resolveClass(ClassLoadingAwareObjectInputStream.java:57) ~[activemq-client-5.15.9.jar:5.15.9]
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1859) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1745) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2033) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1567) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427) ~[?:1.8.0_161]
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:211) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.extractSerializableFromMessage(SimpleMessageConverter.java:219) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:105) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:251) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+[21:26:13:496] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[21:26:14:500] [WARN] - org.springframework.jms.listener.AbstractMessageListenerContainer.invokeErrorHandler(AbstractMessageListenerContainer.java:929) - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void com.springboot.demo.mq.HhyNoodConsumer.receiveQueue(com.springboot.demo.model.HhyMood)' threw exception; nested exception is org.springframework.jms.support.converter.MessageConversionException: Could not convert JMS message; nested exception is javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:122) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:77) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:736) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:696) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
+Caused by: org.springframework.jms.support.converter.MessageConversionException: Could not convert JMS message; nested exception is javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:256) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+Caused by: javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:213) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.extractSerializableFromMessage(SimpleMessageConverter.java:219) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:105) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:251) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+Caused by: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.apache.activemq.util.ClassLoadingAwareObjectInputStream.checkSecurity(ClassLoadingAwareObjectInputStream.java:112) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.apache.activemq.util.ClassLoadingAwareObjectInputStream.resolveClass(ClassLoadingAwareObjectInputStream.java:57) ~[activemq-client-5.15.9.jar:5.15.9]
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1859) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1745) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2033) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1567) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427) ~[?:1.8.0_161]
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:211) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.extractSerializableFromMessage(SimpleMessageConverter.java:219) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:105) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:251) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+[21:26:15:165] [INFO] - io.lettuce.core.EpollProvider.<clinit>(EpollProvider.java:68) - Starting without optional epoll library
+[21:26:15:166] [INFO] - io.lettuce.core.KqueueProvider.<clinit>(KqueueProvider.java:70) - Starting without optional kqueue library
+[21:26:15:520] [WARN] - org.springframework.jms.listener.AbstractMessageListenerContainer.invokeErrorHandler(AbstractMessageListenerContainer.java:929) - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void com.springboot.demo.mq.HhyNoodConsumer.receiveQueue(com.springboot.demo.model.HhyMood)' threw exception; nested exception is org.springframework.jms.support.converter.MessageConversionException: Could not convert JMS message; nested exception is javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:122) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:77) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:736) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:696) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
+Caused by: org.springframework.jms.support.converter.MessageConversionException: Could not convert JMS message; nested exception is javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:256) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+Caused by: javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:213) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.extractSerializableFromMessage(SimpleMessageConverter.java:219) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:105) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:251) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+Caused by: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.apache.activemq.util.ClassLoadingAwareObjectInputStream.checkSecurity(ClassLoadingAwareObjectInputStream.java:112) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.apache.activemq.util.ClassLoadingAwareObjectInputStream.resolveClass(ClassLoadingAwareObjectInputStream.java:57) ~[activemq-client-5.15.9.jar:5.15.9]
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1859) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1745) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2033) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1567) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427) ~[?:1.8.0_161]
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:211) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.extractSerializableFromMessage(SimpleMessageConverter.java:219) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:105) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:251) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+[21:26:16:393] [ERROR] - com.springboot.demo.mail.impl.SendJunkMailServiceImpl.sendJunkMail(SendJunkMailServiceImpl.java:54) - sendJunkMail error and hhyUser=%s
+org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535 Error: ?????????°ß?????????®∫?®¶????: http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:439) ~[spring-context-support-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:360) ~[spring-context-support-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:355) ~[spring-context-support-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at com.springboot.demo.mail.impl.SendJunkMailServiceImpl.sendJunkMail(SendJunkMailServiceImpl.java:51) [classes/:?]
+	at com.springboot.demo.MySpringBootApplicationTests.testMail(MySpringBootApplicationTests.java:184) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) [surefire-junit4-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) [surefire-junit4-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) [surefire-junit4-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) [surefire-junit4-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.2.jar:2.22.2]
+Caused by: javax.mail.AuthenticationFailedException: 535 Error: ?????????°ß?????????®∫?®¶????: http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965) ~[javax.mail-1.6.2.jar:1.6.2]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876) ~[javax.mail-1.6.2.jar:1.6.2]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.Service.connect(Service.java:366) ~[javax.mail-1.6.2.jar:1.6.2]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:517) ~[spring-context-support-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:436) ~[spring-context-support-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 37 more
+[21:26:16:562] [WARN] - org.springframework.jms.listener.AbstractMessageListenerContainer.invokeErrorHandler(AbstractMessageListenerContainer.java:929) - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void com.springboot.demo.mq.HhyNoodConsumer.receiveQueue(com.springboot.demo.model.HhyMood)' threw exception; nested exception is org.springframework.jms.support.converter.MessageConversionException: Could not convert JMS message; nested exception is javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:122) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:77) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:736) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:696) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
+Caused by: org.springframework.jms.support.converter.MessageConversionException: Could not convert JMS message; nested exception is javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:256) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+Caused by: javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:213) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.extractSerializableFromMessage(SimpleMessageConverter.java:219) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:105) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:251) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+Caused by: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.apache.activemq.util.ClassLoadingAwareObjectInputStream.checkSecurity(ClassLoadingAwareObjectInputStream.java:112) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.apache.activemq.util.ClassLoadingAwareObjectInputStream.resolveClass(ClassLoadingAwareObjectInputStream.java:57) ~[activemq-client-5.15.9.jar:5.15.9]
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1859) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1745) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2033) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1567) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427) ~[?:1.8.0_161]
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:211) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.extractSerializableFromMessage(SimpleMessageConverter.java:219) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:105) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:251) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+[21:26:17:069] [INFO] - com.springboot.demo.service.impl.HhyUserServiceImpl.delete(HhyUserServiceImpl.java:93) - Ω´userIdŒ™: 4µƒ”√ªß…æ≥˝
+[21:26:17:577] [WARN] - org.springframework.jms.listener.AbstractMessageListenerContainer.invokeErrorHandler(AbstractMessageListenerContainer.java:929) - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void com.springboot.demo.mq.HhyNoodConsumer.receiveQueue(com.springboot.demo.model.HhyMood)' threw exception; nested exception is org.springframework.jms.support.converter.MessageConversionException: Could not convert JMS message; nested exception is javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:122) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:77) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:736) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:696) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
+Caused by: org.springframework.jms.support.converter.MessageConversionException: Could not convert JMS message; nested exception is javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:256) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+Caused by: javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:213) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.extractSerializableFromMessage(SimpleMessageConverter.java:219) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:105) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:251) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+Caused by: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.apache.activemq.util.ClassLoadingAwareObjectInputStream.checkSecurity(ClassLoadingAwareObjectInputStream.java:112) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.apache.activemq.util.ClassLoadingAwareObjectInputStream.resolveClass(ClassLoadingAwareObjectInputStream.java:57) ~[activemq-client-5.15.9.jar:5.15.9]
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1859) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1745) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2033) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1567) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427) ~[?:1.8.0_161]
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:211) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.extractSerializableFromMessage(SimpleMessageConverter.java:219) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:105) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:251) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+[21:26:18:611] [WARN] - org.springframework.jms.listener.AbstractMessageListenerContainer.invokeErrorHandler(AbstractMessageListenerContainer.java:929) - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void com.springboot.demo.mq.HhyNoodConsumer.receiveQueue(com.springboot.demo.model.HhyMood)' threw exception; nested exception is org.springframework.jms.support.converter.MessageConversionException: Could not convert JMS message; nested exception is javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:122) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:77) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:736) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:696) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
+Caused by: org.springframework.jms.support.converter.MessageConversionException: Could not convert JMS message; nested exception is javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:256) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+Caused by: javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:213) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.extractSerializableFromMessage(SimpleMessageConverter.java:219) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:105) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:251) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+Caused by: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.apache.activemq.util.ClassLoadingAwareObjectInputStream.checkSecurity(ClassLoadingAwareObjectInputStream.java:112) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.apache.activemq.util.ClassLoadingAwareObjectInputStream.resolveClass(ClassLoadingAwareObjectInputStream.java:57) ~[activemq-client-5.15.9.jar:5.15.9]
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1859) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1745) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2033) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1567) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427) ~[?:1.8.0_161]
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:211) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.extractSerializableFromMessage(SimpleMessageConverter.java:219) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:105) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:251) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+[21:26:18:661] [WARN] - org.springframework.jms.listener.AbstractMessageListenerContainer.invokeErrorHandler(AbstractMessageListenerContainer.java:929) - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void com.springboot.demo.mq.HhyNoodConsumer.receiveQueue(com.springboot.demo.model.HhyMood)' threw exception; nested exception is org.springframework.jms.support.converter.MessageConversionException: Could not convert JMS message; nested exception is javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:122) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:77) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:736) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:696) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
+Caused by: org.springframework.jms.support.converter.MessageConversionException: Could not convert JMS message; nested exception is javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:256) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+Caused by: javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:213) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.extractSerializableFromMessage(SimpleMessageConverter.java:219) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:105) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:251) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+Caused by: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.apache.activemq.util.ClassLoadingAwareObjectInputStream.checkSecurity(ClassLoadingAwareObjectInputStream.java:112) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.apache.activemq.util.ClassLoadingAwareObjectInputStream.resolveClass(ClassLoadingAwareObjectInputStream.java:57) ~[activemq-client-5.15.9.jar:5.15.9]
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1859) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1745) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2033) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1567) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427) ~[?:1.8.0_161]
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:211) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.extractSerializableFromMessage(SimpleMessageConverter.java:219) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:105) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:251) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+[21:26:19:688] [WARN] - org.springframework.jms.listener.AbstractMessageListenerContainer.invokeErrorHandler(AbstractMessageListenerContainer.java:929) - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void com.springboot.demo.mq.HhyNoodConsumer.receiveQueue(com.springboot.demo.model.HhyMood)' threw exception; nested exception is org.springframework.jms.support.converter.MessageConversionException: Could not convert JMS message; nested exception is javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:122) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:77) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:736) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:696) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076) [spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
+Caused by: org.springframework.jms.support.converter.MessageConversionException: Could not convert JMS message; nested exception is javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:256) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+Caused by: javax.jms.JMSException: Failed to build body from content. Serializable class not available to broker. Reason: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:213) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.extractSerializableFromMessage(SimpleMessageConverter.java:219) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:105) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:251) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+Caused by: java.lang.ClassNotFoundException: Forbidden class com.springboot.demo.model.HhyMood! This class is not trusted to be serialized as ObjectMessage payload. Please take a look at http://activemq.apache.org/objectmessage.html for more information on how to configure trusted classes.
+	at org.apache.activemq.util.ClassLoadingAwareObjectInputStream.checkSecurity(ClassLoadingAwareObjectInputStream.java:112) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.apache.activemq.util.ClassLoadingAwareObjectInputStream.resolveClass(ClassLoadingAwareObjectInputStream.java:57) ~[activemq-client-5.15.9.jar:5.15.9]
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1859) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1745) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2033) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1567) ~[?:1.8.0_161]
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427) ~[?:1.8.0_161]
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:211) ~[activemq-client-5.15.9.jar:5.15.9]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.extractSerializableFromMessage(SimpleMessageConverter.java:219) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:105) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:251) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter.extractPayload(AbstractAdaptableMessageListener.java:476) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.unwrapPayload(AbstractAdaptableMessageListener.java:542) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.AbstractAdaptableMessageListener$MessagingMessageConverterAdapter$LazyResolutionMessage.getPayload(AbstractAdaptableMessageListener.java:525) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver.resolveArgument(PayloadArgumentResolver.java:115) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:117) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:148) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:116) ~[spring-messaging-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:114) ~[spring-jms-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 10 more
+[21:26:19:752] [INFO] - org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:613) - Scheduler scheduler_$_NON_CLUSTERED paused.
+[21:26:20:692] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'taskScheduler'
+[21:26:20:696] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[21:26:20:698] [INFO] - org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:844) - Shutting down Quartz Scheduler
+[21:26:20:698] [INFO] - org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:694) - Scheduler scheduler_$_NON_CLUSTERED shutting down.
+[21:26:20:698] [INFO] - org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:613) - Scheduler scheduler_$_NON_CLUSTERED paused.
+[21:26:20:699] [INFO] - org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:771) - Scheduler scheduler_$_NON_CLUSTERED shutdown complete.
+[21:26:21:837] [INFO] - org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:597) - Closing JPA EntityManagerFactory for persistence unit 'default'
+[21:26:21:853] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1928) - {dataSource-1} closed

@@ -30,4 +30,6 @@ public interface HhyUserService {
 
     Future<List<HhyUser>> findAsynAll();
     HhyUser findByNameAndPasswordRetry(String name,String password);
+
+    Long findUserTotalNum();
 }
